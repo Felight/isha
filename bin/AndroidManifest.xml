@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.felight.isha"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".GreetUserActivity" >
+        </activity>
+        <activity android:name=".AnotherActivity" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".SecondActivity"
+            android:label="@string/title_activity_second" >
+        </activity>
+        <activity
+            android:name=".SimpleCalculatorActivity"
+            android:label="@string/title_activity_simple_calculator" >
+        </activity>
+        <activity
+            android:name=".PhotoShopActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ApplicationFormActivity"
+            android:label="@string/title_activity_application_form" >
+        </activity>
+        <activity
+            android:name=".BuiltInAppActivity"
+            android:label="@string/title_activity_built_in_app" >
+        </activity>
+        <activity
+            android:name=".AboutAppActivity"
+            android:label="@string/title_activity_about_app" >
+        </activity>
+        <activity
+            android:name=".ToastAndNotificationActivity"
+            android:label="@string/title_activity_toast_and_notification" >
+        </activity>
+        <activity
+            android:name=".WebViewActivity"
+            android:label="@string/title_activity_web_view" >
+        </activity>
+
+        <receiver android:name="com.felight.isha.DateChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.DATE_CHANGED" >
+                </action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.felight.isha.BootCompleteReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.felight.isha.SMSReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.DATA_SMS_RECEIVED" >
+                </action>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

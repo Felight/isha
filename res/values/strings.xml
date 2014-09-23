@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">isha</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="title_activity_simple_calculator">SimpleCalculatorActivity</string>
+    <string name="enternum1">Enter the Number</string>
+    <string name="calculator_title">Simple Calculator</string>
+    <string name="title_activity_photo_shop">PhotoShopActivity</string>
+    <string name="title_activity_application_form">ApplicationFormActivity</string>
+    <string name="title_activity_built_in_app">BuiltInAppActivity</string>
+    <string name="title_activity_about_app">AboutAppActivity</string>
+    <string name="title_activity_toast_and_notification">ToastAndNotificationActivity</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+
+</resources>
