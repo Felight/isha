@@ -26,6 +26,13 @@ public class MainActivity extends Activity {
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
+		int currentapiVersion = android.os.Build.VERSION.SDK_INT;
+		if (currentapiVersion >= android.os.Build.VERSION_CODES.ICE_CREAM_SANDWICH){
+		    // Do something for froyo and above versions
+		} else{
+		    // do something for phones running an SDK before froyo
+		}
+		
 		Toast.makeText(getBaseContext(), item.getTitle() + " Selected", 3000).show();
 		
 		if(item.getTitle().equals("About App")){
